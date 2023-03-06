@@ -1,0 +1,17 @@
+{
+    "name": "cursosarde/importadorpg",
+    "autoload": {
+        "psr-4": {
+            "Cursosarde\\Importadorpg\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "santigc15",
+            "email": "gomezcacheiro@gmail.com"
+        }
+    ],
+    "require": {
+        "phpoffice/phpspreadsheet": "^1.28"
+    }
+}
