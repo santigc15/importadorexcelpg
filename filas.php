@@ -19,12 +19,12 @@ class Excel
         return $resultado;
     }
 
-    public static function obtieneColumnas($archivo)
+    public static function obtieneColumnas($archivo,$array_columnas)
     {
         
         $spreadsheet = IOFactory::load($archivo);
         $worksheet = $spreadsheet->getSheet(0);
-        $columnas = [1,6];
+        $columnas = $array_columnas;
         $filas = $worksheet->toArray();
      foreach ($filas as $row ) {
         $fila=[];
@@ -40,3 +40,4 @@ var_dump($resultado);
 exit;
     }
 }
+?>
